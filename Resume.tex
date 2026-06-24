@@ -1,0 +1,166 @@
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\hypersetup{
+    colorlinks=false,
+    pdfborder={0 0 0}
+}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      #3 & #4 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE SASAKI Shuko}} & Email: \href{mailto:shuko@suou.waseda.jp}{shuko@suou.waseda.jp}\\
+  \href{https://shoqo.github.io/}{Portfolio: shoqo.github.io} & \href{https://github.com/shoqo}{Github: github.com/shoqo} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Waseda University - School of Political Science and Economics}{Tokyo, Japan}
+      {B.A. in Global Political Economy - English-based Degree Program}{September 2023 - Present}
+    \resumeSubHeadingListEnd
+	    
+\vspace{-5pt}
+\section{Skills}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Programming Languages}{Rust, Python, R, JavaScript, C, C++}
+  \resumeSubItem{Tools}{SQL, Google Cloud, Docker, Tableau, Power BI, KNIME}
+	\resumeSubItem{Statistical Methods}{Causal Inference; Matching, Regression Analysis; Instrumental Variables (IV); Regression Discontinuity Design (RDD); Difference-in-Differences (DiD); Conjoint Analysis}
+  \resumeSubItem{Languages}{English (Native); Japanese (Native); Mandarin Chinese (Native)}
+
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{\href{https://veta.co.jp/en/}{Veta}}{Tokyo, Japan (Hybrid)}
+    {SWE (Internship)}{October 2025 - Present}
+    \resumeItemListStart
+        \resumeItem{Dashboard}
+          {Built a client-side administrative panel with integrated visual analytics, including dynamic graphs and heatmaps.}
+        \resumeItem{Chatbot Integration}
+          {Developed and integrated conjoint survey response functionality across LINE, Slack, and Microsoft Teams chatbots, integrating server-side webhooks. Currently implementing an LLM-powered conversational interface that enables users to complete surveys through natural language interactions.}
+    \resumeItemListEnd
+    \resumeSubheading{\href{https://jbdb.jp/}{Japan Biographical Database}}{Tokyo, Japan (Hybrid)}
+    {Developer}{April 2024 - Present}
+      \resumeItemListStart
+        \resumeItem{3D Relationship Graph}
+          {Developed a 3D relationship graph visualization tool using Three.js to represent complex relationship data.}
+        \resumeItem{Tech Stack}
+          {JavaScript, 3D Force-Directed Graph, AngularJS}
+      \resumeItemListEnd
+    \resumeSubheading
+		{\href{https://matsuo-institute.com/}{Matsuo Institute}}{Tokyo, Japan (Hybrid)}
+		{Research (Internship)}{August 2025 - March 2026}
+		\resumeItemListStart  
+        \resumeItem{Multi-object Tracking}
+          {Implemented YOLOX object detection integrated with Norfair for real-time tracking.}
+        \resumeItem{Knowledge Tracing}
+          {Run experiments on graph-based knowledge tracing models and designed new model structures to improve predictive performance.}
+		\resumeItemListEnd
+    \resumeSubheading{\href{https://weblab.t.u-tokyo.ac.jp/en/}{Matsuo-Iwasawa Lab UTokyo} and \href{https://www.deeplearning.ai/}{DeepLearning.AI}}{Tokyo, Japan (Remote)}
+    {Translator}{September 2023 - March 2024}
+      \resumeItemListStart
+        \resumeItem{MOOC translation}
+        {Engaged in the translation and localization of an English MOOC on how to develop programs using the OpenAI API and LangChain into Japanese.}
+      \resumeItemListEnd
+
+    \resumeSubheading		
+    {\href{https://matsuo-institute.com/}{Matsuo Institute}}{Tokyo, Japan (Remote)}
+    {Presales (Internship)}{January 2023 - May 2023}
+      \resumeItemListStart
+        \resumeItem{Prototyping \& UI Design}
+        {Developed interactive UI prototypes to demonstrate solution concepts, enabling clients to visualize functionality and provide early feedback.}
+        \resumeItem{Research \& Technical Insights} 
+        {Surveyed academic papers and industry research to identify potential solutions and provide evidence-based recommendations to clients.}
+      \resumeItemListEnd
+
+  
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-5pt}
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{\href{https://shoqo.github.io/yolox_norfair.html}{YOLOX-Norfair Multi-Object Detection and Tracking}}{Built a system for multi-object detection and tracking in videos by leveraging YOLOX for object detection and processing the outputs to feed into Norfair for accurate tracking across frames. Technologies used: Python, YOLOX, Norfair.}
+\vspace{2pt}
+\resumeSubItem{3D Relationship Graph Visualization Tool}{Developed an interactive 3D relationship graph visualization tool to represent complex relationship data from the Japan Biographical Database. The tool allows users to explore and analyze relationships in a dynamic 3D space, enhancing data comprehension and user engagement.}
+\vspace{2pt}
+\resumeSubItem{KOSPI 200 Market Data Feed Parser}{Rust program that parses UDP packets from a KOSPI 200 pcap file, extracts quote messages, and prints packet time, exchange accept time, issue code, and the five best bids and asks. Supports an optional flag to reorder output by exchange accept time using a sliding 3-second BTreeMap window, keeping memory bounded on inputs exceeding available RAM. Technologies used: Rust, etherparse, pcap.}
+\vspace{2pt}
+\resumeSubItem{Autonomous FPV Drone (In Progress)}{Building a custom FPV drone with an onboard autonomy stack for point-to-point navigation and real-time collision avoidance. Implementing visual-inertial state estimation, path planning, and obstacle-avoidance control on constrained companion compute, integrating flight controller, sensors, and perception software into a single autonomous system.}
+\resumeSubHeadingListEnd
+
+\vspace{-5pt}
+\section{Publications}
+\href{https://pub.confit.atlas.jp/en/event/jsai2026/presentation/4O5-IS-2c-02}{Maurya, S. K., Sasaki, S., Kawano, M., Iwasawa, Y., \& Matsuo, Y. \textit{Implicit Graph Learning with Adaptive Temporal Bias for Knowledge Tracing}. Proceedings of the 40th Annual Conference of the Japanese Society for Artificial Intelligence (JSAI 2026), June 2026.}
+\end{document}

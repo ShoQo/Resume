@@ -1,0 +1,7 @@
+# Ignore everything
+*
+
+# Except the files we care about
+!.gitignore
+!Resume.tex
+!Resume.pdf
